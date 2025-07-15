@@ -86,9 +86,10 @@ permalink: /members/
     background-color: #f9f9f9;
   }
   .member-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 150px;           /* 고정 너비 */
+    height: 150px;          /* 고정 높이 */
+    border-radius: 50%;     /* 원형 */
+    object-fit: cover;      /* 비율 유지하며 잘라서 채움 */
     margin-bottom: 15px;
   }
   .member-card h4 {

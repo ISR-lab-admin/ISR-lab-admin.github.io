@@ -10,8 +10,8 @@ topics:
     description:
       - "Developing algorithms for safe and efficient robot navigation in complex environments."
       - "Focus on multi-robot coordination and collision avoidance."
-    media: "large_warehouse 100.mp4"
-    type: "video"
+    media: "ss.jpg"
+    type: "image"
 
   - title: "Autonomous Navigation"
     description:
@@ -23,8 +23,8 @@ topics:
 achievements:
   - title: "Multi-Robot Coordination"
     description: "Demonstration of real-time path planning for multiple robots in dynamic environments."
-    media: "large_warehouse 100.mp4"
-    type: "video"
+    media: "ss.jpg"
+    type: "image"
 
   - title: "Human-Robot Interaction"
     description: "Safe navigation around humans with predictive motion planning."

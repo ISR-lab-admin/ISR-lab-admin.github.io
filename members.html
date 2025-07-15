@@ -88,9 +88,10 @@ permalink: /members/
   .member-card img {
     width: 150px;               /* 고정 너비 */
     height: 150px;              /* 고정 높이 */
-    border-radius: 15px;        /* 꼭짓점 둥글게 (원하지 않으면 더 줄임) */
+    border-radius: 15px;        /* 꼭짓점 둥글게 */
     object-fit: cover;          /* 비율 유지하며 채움 */
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;   /* 위아래 여백 + 좌우 중앙 정렬 */
+    display: block;             /* 중앙정렬 위해 block 지정 */
   }
   .member-card h4 {
     margin: 10px 0 5px;

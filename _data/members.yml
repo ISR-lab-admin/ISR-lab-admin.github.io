@@ -2,19 +2,23 @@ phd:
   - name: "John Doe"
     photo: "ss.jpg"
     research: "Autonomous Navigation"
-
+    email: "john.doe@example.com"
+        
   - name: "Jane Smith"
     photo: "ss.jpg"
     research: "Multi-Robot Coordination"
+    email: "john.doe@example.com"
 
 masters:
   - name: "Alice Kim"
     photo: "ss.jpg"
     research: "Human-Robot Interaction"
+    email: "john.doe@example.com"
 
   - name: "Bob Lee"
     photo: "ss.jpg"
     research: "AI for Robotics"
+    email: "john.doe@example.com"
 
 alumni:
   - name: "Charlie Park"

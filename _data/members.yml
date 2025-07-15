@@ -9,42 +9,41 @@ phd:
     research: "Multi-Robot Coordination"
     email: "john.doe@example.com"
 
-  - name: "John Doe"
+  - name: "John Doe1"
     photo: "ss.jpg"
     research: "Autonomous Navigation"
     email: "john.doe@example.com"
         
-  - name: "Jane Smith"
+  - name: "Jane Smith2"
     photo: "ss.jpg"
     research: "Multi-Robot Coordination"
     email: "john.doe@example.com"
     
-  - name: "John Doe"
+  - name: "John Doe3"
     photo: "ss.jpg"
     research: "Autonomous Navigation"
     email: "john.doe@example.com"
         
-  - name: "Jane Smith"
+  - name: "Jane Smith4"
     photo: "ss.jpg"
     research: "Multi-Robot Coordination"
     email: "john.doe@example.com"
         
-  - name: "Jane Smith"
+  - name: "Jane Smith5"
     photo: "ss.jpg"
     research: "Multi-Robot Coordination"
     email: "john.doe@example.com"
     
-  - name: "John Doe"
+  - name: "John Doe6"
     photo: "ss.jpg"
     research: "Autonomous Navigation"
     email: "john.doe@example.com"
         
-  - name: "Jane Smith"
+  - name: "Jane Smith7"
     photo: "ss.jpg"
     research: "Multi-Robot Coordination"
     email: "john.doe@example.com"
     
-
 masters:
   - name: "Alice Kim"
     photo: "ss.jpg"

@@ -1,0 +1,28 @@
+phd:
+  - name: "John Doe"
+    photo: "john_doe.jpg"
+    research: "Autonomous Navigation"
+
+  - name: "Jane Smith"
+    photo: "jane_smith.jpg"
+    research: "Multi-Robot Coordination"
+
+masters:
+  - name: "Alice Kim"
+    photo: "alice_kim.jpg"
+    research: "Human-Robot Interaction"
+
+  - name: "Bob Lee"
+    photo: "bob_lee.jpg"
+    research: "AI for Robotics"
+
+alumni:
+  - name: "Charlie Park"
+    photo: "charlie_park.jpg"
+    research: "Path Planning"
+    workplace: "Samsung Electronics"
+
+  - name: "Diana Choi"
+    photo: "diana_choi.jpg"
+    research: "Vision-Based Navigation"
+    workplace: "Hyundai Robotics"

@@ -1,27 +1,100 @@
 ---
 layout: page
-title: Blog
-permalink: /blog/
+title: Members
+permalink: /members/
 ---
+
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Get the latest on what we're doing</h1>
-          <p>Catch up with us, anytime and anywhere</p>
+          <h1>Our Lab Members</h1>
+          <p>Meet the people driving innovation at ISR-LAB</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% for post in site.posts %}
-<div class="post-area">
-  <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date">{{ post.date | date_to_long_string }}</p>
-  <p>
-    {{ post.content | strip_html | truncatewords: 50 }}
-  </p>
-</div>
-{% endfor %}
+
+<!-- Members Section -->
+<section id="members">
+  <div class="container">
+
+    <!-- Ph.D. Students -->
+    <div class="section-title">
+      <h2>Ph.D. Students</h2>
+    </div>
+    <div class="row">
+      {% for member in site.data.members.phd %}
+      <div class="col-md-4 col-sm-6">
+        <div class="member-card">
+          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+          <h4>{{ member.name }}</h4>
+          <p><strong>Research Area:</strong> {{ member.research }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Master's Students -->
+    <div class="section-title">
+      <h2>Master's Students</h2>
+    </div>
+    <div class="row">
+      {% for member in site.data.members.masters %}
+      <div class="col-md-4 col-sm-6">
+        <div class="member-card">
+          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+          <h4>{{ member.name }}</h4>
+          <p><strong>Research Area:</strong> {{ member.research }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Alumni -->
+    <div class="section-title">
+      <h2>Alumni</h2>
+    </div>
+    <div class="row">
+      {% for member in site.data.members.alumni %}
+      <div class="col-md-4 col-sm-6">
+        <div class="member-card">
+          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+          <h4>{{ member.name }}</h4>
+          <p><strong>Research Area:</strong> {{ member.research }}</p>
+          <p><strong>Current Workplace:</strong> {{ member.workplace }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .member-card {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  .member-card h4 {
+    margin: 10px 0 5px;
+    font-weight: 600;
+  }
+  .member-card p {
+    margin: 0;
+    font-size: 14px;
+  }
+</style>

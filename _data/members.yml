@@ -1,59 +1,35 @@
 phd:
   - name: "강근동"
-    photo: "강근동.png"
-    research: "Autonomous Navigation"
-    email: "john.doe@example.com"
-        
-  - name: "Jane Smith"
-    photo: "ss.jpg"
-    research: "Multi-Robot Coordination"
-    email: "john.doe@example.com"
+    photo: "강근동.jpg"
+    research: "Multi-Robot Path Planning"
+    email: "keundong95@gmail.com"
 
-  - name: "John Doe1"
-    photo: "ss.jpg"
-    research: "Autonomous Navigation"
-    email: "john.doe@example.com"
-        
-  - name: "Jane Smith2"
-    photo: "ss.jpg"
-    research: "Multi-Robot Coordination"
-    email: "john.doe@example.com"
-    
-  - name: "John Doe3"
-    photo: "ss.jpg"
-    research: "Autonomous Navigation"
-    email: "john.doe@example.com"
-        
-  - name: "Jane Smith4"
-    photo: "ss.jpg"
-    research: "Multi-Robot Coordination"
-    email: "john.doe@example.com"
-        
-  - name: "Jane Smith5"
-    photo: "ss.jpg"
-    research: "Multi-Robot Coordination"
-    email: "john.doe@example.com"
-    
-  - name: "John Doe6"
-    photo: "ss.jpg"
-    research: "Autonomous Navigation"
-    email: "john.doe@example.com"
-        
-  - name: "Jane Smith7"
-    photo: "ss.jpg"
-    research: "Multi-Robot Coordination"
-    email: "john.doe@example.com"
-    
+  - name: "조익현"
+    photo: "조익현.jpg"
+    research: "Environment Perception and Traversable Region Detection"
+    email: "tre0430@korea.ac.kr"
+
+  - name: "박건혁"
+    photo: "박건혁.jpg"
+    research: "Mapping and Localization"
+    email: "hyeok0913@korea.ac.kr"
+
+  - name: "문승준"
+    photo: "문승준.jpg"
+    research: "Multi-Robot Path Planning and Obstacle-Avoiding Trajectory Generation"
+    email: "janismoon@korea.ac.kr"
+
 masters:
-  - name: "Alice Kim"
-    photo: "ss.jpg"
-    research: "Human-Robot Interaction"
-    email: "john.doe@example.com"
+  - name: "김부건"
+    photo: "김부건.jpg"
+    research: "Multi-Robot Path Planning"
+    email: "0721qnrjs@korea.ac.kr"
 
-  - name: "Bob Lee"
-    photo: "ss.jpg"
-    research: "AI for Robotics"
-    email: "john.doe@example.com"
+  - name: "박세훈"
+    photo: "박세훈.webp"
+    research: "Multi-Robot Path Planning"
+    email: "yuiyt@korea.ac.kr"
+
 
 alumni:
   - name: "김석규"
@@ -198,4 +174,12 @@ alumni:
 
   - name: "황창주"
     photo: "황창주.png"
+    workplace: ""
+
+  - name: "조수현"
+    photo: "조수현.jpg"
+    workplace: ""
+
+  - name: "이진혁"
+    photo: "이진혁.jpg"
     workplace: ""

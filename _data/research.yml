@@ -3,40 +3,40 @@ topics:
     description:
       - "Estimating position and orientation of a robot on the map using various sensors such as GPS and LiDARs."
       - "Fusion of sensor data for improved accuracy in dynamic environments."
-    media: "position_estimation.jpg"
+    media: "ss.jpg"
     type: "image"
 
   - title: "Path Planning"
     description:
       - "Developing algorithms for safe and efficient robot navigation in complex environments."
       - "Focus on multi-robot coordination and collision avoidance."
-    media: "path_planning.mp4"
+    media: "large_warehouse 100.mp4"
     type: "video"
 
   - title: "Autonomous Navigation"
     description:
       - "Developing robust autonomous systems for indoor and outdoor environments."
       - "Integration of AI techniques for dynamic decision making."
-    media: "autonomous_navigation.jpg"
+    media: "ss.jpg"
     type: "image"
 
 achievements:
   - title: "Multi-Robot Coordination"
     description: "Demonstration of real-time path planning for multiple robots in dynamic environments."
-    media: "research_demo1.mp4"
+    media: "large_warehouse 100.mp4"
     type: "video"
 
   - title: "Human-Robot Interaction"
     description: "Safe navigation around humans with predictive motion planning."
-    media: "result2.jpg"
+    media: "ss.jpg"
     type: "image"
 
   - title: "SLAM in Urban Environments"
     description: "High-accuracy mapping using LiDAR and vision-based SLAM techniques."
-    media: "result3.jpg"
+    media: "ss.jpg"
     type: "image"
 
   - title: "22SLAM in Urban Environments"
     description: "High-accuracy mapping using LiDAR and vision-based SLAM techniques."
-    media: "result3.jpg"
+    media: "ss.jpg"
     type: "image"

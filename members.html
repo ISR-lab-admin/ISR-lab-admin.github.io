@@ -28,7 +28,7 @@ permalink: /members/
     </div>
     <div class="row">
       {% for member in site.data.members.phd %}
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
           <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
           <h4>{{ member.name }}</h4>
@@ -79,15 +79,15 @@ permalink: /members/
 <style>
   .member-card {
     text-align: center;
-    margin-bottom: 30px;
-    padding: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
   }
   .member-card img {
-    width: 150px;               /* 고정 너비 */
-    height: 150px;              /* 고정 높이 */
+    width: 120px;               /* 고정 너비 */
+    height: 120px;              /* 고정 높이 */
     border-radius: 15px;        /* 꼭짓점 둥글게 */
     object-fit: cover;          /* 비율 유지하며 채움 */
     margin: 0 auto 15px auto;   /* 위아래 여백 + 좌우 중앙 정렬 */
@@ -99,6 +99,6 @@ permalink: /members/
   }
   .member-card p {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
   }
 </style>

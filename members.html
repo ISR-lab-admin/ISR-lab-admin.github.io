@@ -28,7 +28,7 @@ permalink: /members/
     </div>
     <div class="row">
       {% for member in site.data.members.phd %}
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="member-card">
           <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
           <h4>{{ member.name }}</h4>
@@ -78,7 +78,7 @@ permalink: /members/
 
 <style>
   .member-card {
-    width: 220px;               /* 카드 가로 길이 고정 */
+    width: 320px;               /* 카드 가로 길이 고정 */
     height: 300px;              /* 카드 세로 길이 고정 */
     text-align: center;
     margin: 10px auto;          /* 가운데 정렬 및 여백 */

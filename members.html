@@ -23,55 +23,61 @@ permalink: /members/
   <div class="container">
 
     <!-- Ph.D. Students -->
-    <div class="section-title">
-      <h2>Ph.D. Course</h2>
-    </div>
-    <div class="row">
-      {% for member in site.data.members.phd %}
-      <div class="col-md-4 col-sm-6">
-        <div class="member-card">
-          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
-          <h4>{{ member.name }}</h4>
-          <p><strong>Research Area:</strong> {{ member.research }}</p>
-          <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
-        </div>
+    <div class="member-section">
+      <div class="section-title">
+        <h2>Ph.D. Course</h2>
       </div>
-      {% endfor %}
+      <div class="row">
+        {% for member in site.data.members.phd %}
+        <div class="col-md-4 col-sm-6">
+          <div class="member-card">
+            <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+            <h4>{{ member.name }}</h4>
+            <p><strong>Research Area:</strong> {{ member.research }}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
 
     <!-- Master's Students -->
-    <div class="section-title">
-      <h2>MS Course</h2>
-    </div>
-    <div class="row">
-      {% for member in site.data.members.masters %}
-      <div class="col-md-4 col-sm-6">
-        <div class="member-card">
-          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
-          <h4>{{ member.name }}</h4>
-          <p><strong>Research Area:</strong> {{ member.research }}</p>
-          <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
-        </div>
+    <div class="member-section">
+      <div class="section-title">
+        <h2>MS Course</h2>
       </div>
-      {% endfor %}
+      <div class="row">
+        {% for member in site.data.members.masters %}
+        <div class="col-md-4 col-sm-6">
+          <div class="member-card">
+            <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+            <h4>{{ member.name }}</h4>
+            <p><strong>Research Area:</strong> {{ member.research }}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
 
     <!-- Alumni -->
-    <div class="section-title">
-      <h2>Alumni</h2>
-    </div>
-    <div class="row">
-      {% for member in site.data.members.alumni %}
-      <div class="col-md-4 col-sm-6">
-        <div class="alumni-card">
-          <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
-          <h4>{{ member.name }}</h4>
-          <!-- <p><strong>Research Area:</strong> {{ member.research }}</p> -->
-          <!-- <p><strong>Current Workplace:</strong> {{ member.workplace }}</p> -->
-          <p>{{ member.workplace }}</p>
-        </div>
+    <div class="member-section">
+      <div class="section-title">
+        <h2>Alumni</h2>
       </div>
-      {% endfor %}
+      <div class="row">
+        {% for member in site.data.members.alumni %}
+        <div class="col-md-4 col-sm-6">
+          <div class="alumni-card">
+            <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+            <h4>{{ member.name }}</h4>
+            <!-- <p><strong>Research Area:</strong> {{ member.research }}</p> -->
+            <!-- <p><strong>Current Workplace:</strong> {{ member.workplace }}</p> -->
+            <p>{{ member.workplace }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
 
   </div>
@@ -146,3 +152,11 @@ permalink: /members/
   }
 
 </style>
+
+.section-title {
+  margin-bottom: 10px; /* 제목과 카드 사이 좁히기 */
+}
+
+.member-section {
+  margin-bottom: 60px; /* 카드와 다음 섹션 제목 사이 여유 주기 */
+}

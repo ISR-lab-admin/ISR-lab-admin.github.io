@@ -78,12 +78,19 @@ permalink: /members/
 
 <style>
   .member-card {
+    width: 220px;               /* 카드 가로 길이 고정 */
+    height: 300px;              /* 카드 세로 길이 고정 */
     text-align: center;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin: 10px auto;          /* 가운데 정렬 및 여백 */
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
+  
+    display: flex;              /* 세로 가운데 정렬을 위해 flex 사용 */
+    flex-direction: column;
+    justify-content: center;    /* 세로 가운데 정렬 */
+    align-items: center;        /* 가로 가운데 정렬 */
   }
   .member-card img {
     width: 120px;               /* 고정 너비 */

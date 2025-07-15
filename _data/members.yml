@@ -1,12 +1,12 @@
 phd:
   - name: "강근동"
-    photo: "강근동.jpg"
+    photo: "강근동.png"
     research: "Multi-Robot Path Planning"
     email: "keundong95@gmail.com"
 
   - name: "조익현"
     photo: "조익현.jpg"
-    research: "Environment Perception and Traversable Region Detection"
+    research: "Environment Perception and Traversability Analysis"
     email: "tre0430@korea.ac.kr"
 
   - name: "박건혁"
@@ -16,7 +16,7 @@ phd:
 
   - name: "문승준"
     photo: "문승준.jpg"
-    research: "Multi-Robot Path Planning and Obstacle-Avoiding Trajectory Generation"
+    research: "Collision-Free Trajectory Planning	"
     email: "janismoon@korea.ac.kr"
 
 masters:

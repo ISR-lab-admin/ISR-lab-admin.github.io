@@ -26,10 +26,10 @@ permalink: /research/
     <div class="row research-block {% if forloop.index0 % 2 == 1 %}reverse{% endif %}">
       <div class="col-md-6">
         {% if topic.type == "image" %}
-        <img src="{{ site.baseurl }}/img/research/{{ block.media }}" alt="{{ block.title }}" class="img-responsive research-media">
+        <img src="{{ site.baseurl }}/img/research/{{ topic.media }}" alt="{{ topic.title }}" class="img-responsive research-media">
         {% elsif topic.type == "video" %}
         <video controls class="img-responsive rounded">
-          <source src="{{ site.baseurl }}/img/research/{{ block.media }}" type="video/mp4">
+          <source src="{{ site.baseurl }}/img/research/{{ topic.media }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         {% endif %}

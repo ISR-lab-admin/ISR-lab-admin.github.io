@@ -95,12 +95,17 @@ permalink: /research/
     padding: 15px;
     margin-bottom: 30px;
     text-align: center;
+    width: 300px;          /* 고정 가로 */
+    height: 400px;         /* 고정 세로 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내용 세로 정렬 */
   }
   .achievement-card img, .achievement-card video {
     border-radius: 8px;
-    max-height: 200px;
-    object-fit: cover;
     width: 100%;
+    height: 200px;         /* 이미지/비디오 고정 높이 */
+    object-fit: cover;     /* 비율 유지 + 잘라서 채움 */
   }
   .achievement-card h4 {
     margin-top: 15px;

@@ -1,6 +1,6 @@
 phd:
-  - name: "John Doe"
-    photo: "ss.jpg"
+  - name: "강근동"
+    photo: "강근동.png"
     research: "Autonomous Navigation"
     email: "john.doe@example.com"
         
@@ -56,12 +56,146 @@ masters:
     email: "john.doe@example.com"
 
 alumni:
-  - name: "Charlie Park"
-    photo: "ss.jpg"
-    research: "Path Planning"
+  - name: "김석규"
+    photo: "김석규.jpg"
+    workplace: "Hyundai Motor Company, Namyang R&D Center"
+
+  - name: "김달형"
+    photo: "김달형.jpg"
+    workplace: "Postdoctoral Assistant, Harvard University; Professor, Southern Illinois University"
+
+  - name: "이국태"
+    photo: "이국태.jpg"
+    workplace: "Assistant Professor, New Mexico Tech"
+
+  - name: "최민기"
+    photo: "최민기.jpg"
+    workplace: "Consultant, EON Group"
+
+  - name: "홍승범"
+    photo: "홍승범.jpg"
     workplace: "Samsung Electronics"
 
-  - name: "Diana Choi"
-    photo: "ss.jpg"
-    research: "Vision-Based Navigation"
-    workplace: "Hyundai Robotics"
+  - name: "안재완"
+    photo: "안재완.jpg"
+    workplace: "Mando Corp."
+
+  - name: "김호연"
+    photo: "김호연.jpg"
+    workplace: "Robotics Engineer, York Exponential"
+
+  - name: "신유진"
+    photo: "신유진.jpg"
+    workplace: "The Washington Post"
+
+  - name: "유광현"
+    photo: "유광현.jpg"
+    workplace: "Korea Gas Corporation"
+
+  - name: "노재일"
+    photo: "노재일.jpg"
+    workplace: "3D Systems Korea"
+
+  - name: "유윤규"
+    photo: "유윤규.jpg"
+    workplace: "Korea Basic Science Institute (KBSI)"
+
+  - name: "정창배"
+    photo: "정창배.jpg"
+    workplace: "Republic of Korea Army Headquarters"
+
+  - name: "김동현"
+    photo: "김동현.jpg"
+    workplace: "LIG Nex1"
+
+  - name: "성윤창"
+    photo: "성윤창.jpg"
+    workplace: "Postdoctoral Researcher, University of Texas at Austin"
+
+  - name: "문창배"
+    photo: "문창배.jpg"
+    workplace: "Professor, Chonnam National University"
+
+  - name: "정다운"
+    photo: "정다운.png"
+    workplace: "Hyundai Heavy Industries"
+
+  - name: "조효주"
+    photo: "조효주.jpg"
+    workplace: "Samsung Electronics"
+
+  - name: "이우식"
+    photo: "이우식.jpg"
+    workplace: "Ph.D. Candidate, University of Delaware"
+
+  - name: "김주엽"
+    photo: "김주엽.jpg"
+    workplace: "LG CNS"
+
+  - name: "유정환"
+    photo: "유정환.jpg"
+    workplace: "Samsung Electronics"
+
+  - name: "김지웅"
+    photo: "김지웅.png"
+    workplace: "Korea Institute of Industrial Technology (KITECH)"
+
+  - name: "배정연"
+    photo: "배정연.png"
+    workplace: "Assistant Professor, Michigan Technological University"
+
+  - name: "진지용"
+    photo: "진지용.jpg"
+    workplace: "Hyundai Motor Company"
+
+  - name: "하승호"
+    photo: "하승호.png"
+    workplace: "LG CNS"
+
+  - name: "이정호"
+    photo: "이정호.png"
+    workplace: "Samsung Electronics"
+
+  - name: "이준기"
+    photo: "이준기.png"
+    workplace: "LG Innotek"
+
+  - name: "박성용"
+    photo: "박성용_edited.jpg"
+    workplace: "AVALVE Co., Ltd."
+
+  - name: "이현석"
+    photo: "이현석_edited.jpg"
+    workplace: "Agency for Defense Development (ADD)"
+
+  - name: "김기태"
+    photo: "김기태.jpg"
+    workplace: "Ph.D. Candidate, Purdue University"
+
+  - name: "형승호"
+    photo: "형승호.jpg"
+    workplace: ""
+
+  - name: "권현기"
+    photo: "권현기.png"
+    workplace: "Hyundai Motor Company"
+
+  - name: "차동근"
+    photo: "차동근.jpg"
+    workplace: ""
+
+  - name: "이진원"
+    photo: "이진원.png"
+    workplace: ""
+
+  - name: "조민우"
+    photo: "조민우.png"
+    workplace: "Ph.D. Candidate, Georgia Institute of Technology"
+
+  - name: "이찬희"
+    photo: "이찬희.jpg"
+    workplace: ""
+
+  - name: "황창주"
+    photo: "황창주.png"
+    workplace: ""

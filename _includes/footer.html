@@ -22,7 +22,7 @@
 /* Footer Custom Styles */
 .footer-content {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch; /* 이 부분이 중요합니다. */
   flex-wrap: wrap;
   gap: 30px; /* 로고와 정보 사이의 간격 */
 }
@@ -33,8 +33,9 @@
 }
 
 .footer-logo {
-  width: 200px;
-  height: auto;
+  max-width: 100%;
+  height: 100%; /* 부모 요소의 높이에 맞추도록 설정 */
+  object-fit: contain; /* 이미지 비율을 유지하면서 부모 요소에 맞춤 */
 }
 
 .footer-right {

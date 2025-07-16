@@ -34,13 +34,8 @@ permalink: /
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
-        <div class="block art-gallery-flex">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team0" style="flex-basis: 65%;">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team1" style="flex-basis: 30%;">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team2" style="flex-basis: 40%;">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team3" style="flex-basis: 55%;">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team4" style="flex-basis: 25%;">
-          <img src="img/lab_team.jpg" alt="ISR-LAB Team5" style="flex-basis: 30%;">
+        <div class="block">
+          <img src="img/lab_team.jpg" alt="ISR-LAB Team0>
         </div>
       </div><!-- .col-md-5 close -->
     </div>
@@ -117,52 +112,3 @@ permalink: /
     </div>
   </div>
 </section>
-
-<style>
-
-  /* Intro Section - Art Gallery Flexbox Styles */
-.art-gallery-flex {
-  display: flex;
-  flex-wrap: wrap; /* 이미지들이 컨테이너 너비를 넘어가면 다음 줄로 배치 */
-  gap: 15px; /* 이미지 사이의 간격 */
-  justify-content: flex-start; /* 이미지들을 왼쪽 정렬 */
-  align-items: flex-start; /* 각 줄의 이미지들을 상단에 정렬 */
-  align-content: flex-start; /* 여러 줄의 이미지 그룹을 상단에 정렬 */
-  padding: 10px; /* 블록 내부 패딩 */
-  overflow: hidden; /* 이미지가 블록을 넘어가지 않도록 */
-}
-
-.art-gallery-flex img {
-  height: auto; /* 이미지 비율 유지 */
-  max-width: 100%; /* 부모 너비를 넘지 않도록 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2); /* 그림자 효과 */
-  /* transition: transform 0.3s ease; /* 호버 효과를 위한 전환 */
-}
-
-/* Optional: Add hover effect for images */
-/*
-.art-gallery-flex img:hover {
-  transform: scale(1.03); /* 호버 시 살짝 확대 */
-  z-index: 10; /* 호버 시 다른 이미지 위로 올라오도록 */
-}
-*/
-
-/* Individual image sizing for varied look */
-/* flex-basis 값을 다양하게 조정하여 미술관 느낌을 강화 */
-.art-gallery-flex img:nth-child(1) { flex-basis: 65%; }
-.art-gallery-flex img:nth-child(2) { flex-basis: 30%; }
-.art-gallery-flex img:nth-child(3) { flex-basis: 40%; }
-.art-gallery-flex img:nth-child(4) { flex-basis: 55%; }
-.art-gallery-flex img:nth-child(5) { flex-basis: 25%; }
-.art-gallery-flex img:nth-child(6) { flex-basis: 70%; }
-.art-gallery-flex img:nth-child(7) { flex-basis: 30%; }
-
-
-/* 모바일 화면 대응 */
-@media (max-width: 767px) {
-  .art-gallery-flex img {
-    flex-basis: 100% !important; /* 모바일에서는 이미지를 한 줄에 하나씩 */
-  }
-}
-</style>

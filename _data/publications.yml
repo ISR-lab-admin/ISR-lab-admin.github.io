@@ -1,0 +1,25 @@
+international:
+  - year: 2021
+    entries:
+      - title: "Outdoor Navigation of a Mobile Robot in Crowded Environment"
+        authors: "Keundong Kang, Jinwon Lee, Soohyun Cho, Ikhyeon Cho, Geonhyeok Park, Minwoo Cho, Daehyun Pyo, Woojin Chung"
+        conference: "2021 18th International Conference on Ubiquitous Robots (UR)"
+        link: "" # 링크가 있다면 여기에 추가
+
+      - title: "Design and Implementation of a Robotic Software Architecture for Autonomous Mobile Robot for Delivery Service in a Cluttered Public Environment"
+        authors: "Seongyong Park, Jiyong Jin, Hyunsuk Lee, Jihoon Seong, Soohyun Cho, Woojin Chung"
+        conference: "2019 16th International Conference on Ubiquitous Robots (UR)"
+        link: ""
+
+domestic:
+  - year: 2021
+    entries:
+      - title: "2.5차원 격자지도 업데이트에 기반한 실외환경에서의 주행가능영역 검출 방법"
+        authors: "조익현, 정우진"
+        conference: "정보 및 제어 학술대회 CICS '21"
+        link: ""
+
+      - title: "혼잡한 환경에서 안전한 이동로봇 주행을 위한 경유 지점 생성 기법"
+        authors: "강근동, 정우진"
+        conference: "정보 및 제어 학술대회 CICS '21"
+        link: ""

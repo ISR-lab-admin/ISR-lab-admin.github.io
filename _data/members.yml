@@ -6,7 +6,7 @@ phd:
 
   - name: "조익현"
     photo: "조익현.jpg"
-    research: "Environment Perception and Traversability Analysis"
+    research: "3D Perception and Reconstruction, Traversability Analysis"
     email: "tre0430@korea.ac.kr"
 
   - name: "박건혁"

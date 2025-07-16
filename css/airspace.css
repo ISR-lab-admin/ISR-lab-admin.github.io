@@ -14,7 +14,7 @@
 	Common Css
 --*/
 body {
-  font-family: 'Open Sans', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans KR', 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 h1,

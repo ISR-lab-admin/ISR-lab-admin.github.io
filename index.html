@@ -113,3 +113,27 @@ permalink: /
     </div>
   </div>
 </section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById("slider");
+    const images = [
+      "img/feature-bg.jpg",
+      "img/slider-bg.jpg",
+      "img/lab_team.jpg"
+    ];
+    let current = 0;
+
+    function changeBackground() {
+      slider.style.backgroundImage = `url(${images[current]})`;
+      current = (current + 1) % images.length;
+    }
+
+    // 처음 이미지 세팅
+    changeBackground();
+
+    // 5초마다 이미지 변경
+    setInterval(changeBackground, 5000);
+  });
+</script>

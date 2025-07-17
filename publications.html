@@ -57,7 +57,7 @@ permalink: /publications/
           <strong>{{ pub.title }}</strong><br>
           <em>{{ pub.authors }}</em><br>
           <span>{{ pub.conference }}</span>
-          {% if pub.link %}
+          {% if pub.link and pub.link!="" %}
           <br><a href="{{ pub.link }}" target="_blank">[Link]</a>
           {% endif %}
         </li>

@@ -806,3 +806,8 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+#service .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

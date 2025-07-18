@@ -47,3 +47,8 @@ achievements:
     description: "Safe navigation around humans with predictive motion planning."
     media: "https://www.youtube.com/watch?v=6gpt1lJe0wc"
     type: "youtube"
+    
+  - title: "wj lecture"
+    description: "Safe navigation around humans with predictive motion planning."
+    media: "https://www.youtube.com/watch?v=8N8rkzLU55o"
+    type: "youtube"

@@ -1,11 +1,12 @@
 topics:
   - title: "Safe and Reliable 3D Scene Understanding"
     description:
-      - "Self-supervised, Risk-aware learning from navigation experiences of mobile robots"
+      - "Self-supervised, Risk-aware 3D Scene learning"
       - "Traversability estimation of urban outdoor environments"
-      - "Uncertainty-aware 3D Perception in Autonomous Navigation"
-    media: "ss.jpg"
-    type: "image"
+      - "Uncertainty-aware 3D perception in autonomous navigation"
+      - "Learning from navigation experiences of mobile robots"
+    media: "scene_understanding_demo.mp4"
+    type: "video"
 
   - title: "Path Planning"
     description:

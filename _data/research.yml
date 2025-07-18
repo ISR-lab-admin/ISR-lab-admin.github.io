@@ -42,3 +42,8 @@ achievements:
     description: "High-accuracy mapping using LiDAR and vision-based SLAM techniques."
     media: "ss.jpg"
     type: "image"
+    
+  - title: "infinite challenge"
+    description: "Safe navigation around humans with predictive motion planning."
+    media: "https://www.youtube.com/watch?v=6gpt1lJe0wc"
+    type: "youtube"

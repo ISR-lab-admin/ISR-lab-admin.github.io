@@ -806,11 +806,3 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
-#service .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-#service .col-sm-6.col-md-3 {
-  padding-left: 0;
-  padding-right: 0;
-}

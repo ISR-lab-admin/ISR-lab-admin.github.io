@@ -18,18 +18,35 @@ permalink: /
   </div>
 </section>
 
-<!-- Wrapper Start -->
-<section id="intro">
-  <div class="container">
-    <div class="row">
-        <div class="block">
-          <div class="section-title">
-            <h2>About ISR-LAB</h2>
-            <p>안녕하세요. 고려대학교 기계공학과의 ISR (Intelligent Systems & Robotics Lab.) 지능 시스템 및 로보틱스 연구실입니다. 본 연구실 (지도교수: 정우진)에서는 미래에 일상생활의 동반자로서 다양한 역할을 수행할 지능형 로봇과 자율 주행 자동차에 관련된 연구를 수행하고 있습니다.</p> 
-          </div>
-        </div>
-    </div>
-  </div>
+<!-- Research Achievements -->
+<section id="research-achievements" style="background-color: #f8f8f8; padding: 60px 0;">
+  <div class="container">
+    <div class="section-title">
+      <h2>Main Research Achievements</h2>
+    </div>
+    <div class="row">
+      {% for achievement in site.data.research.achievements %}
+      <div class="col-md-4 col-sm-6">
+        <div class="achievement-card">
+          {% if achievement.type == "image" %}
+          <img src="{{ site.baseurl }}/img/research/{{ achievement.media }}" class="img-responsive" alt="{{ achievement.title }}">
+          {% elsif achievement.type == "video" %}
+          <video controls class="img-responsive">
+            <source src="{{ site.baseurl }}/videos/{{ achievement.media }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          {% elsif achievement.type == "youtube" %}
+          <div class="embed-responsive">
+            <iframe src="{{ achievement.media | replace: 'watch?v=', 'embed/' }}" allowfullscreen></iframe>
+          </div>
+          {% endif %}
+          <h4>{{ achievement.title }}</h4>
+          <p>{{ achievement.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 <!-- Research Areas Start -->

@@ -8,12 +8,12 @@ topics:
     media: "scene_understanding_demo.mp4"
     type: "video"
 
-  - title: "Path Planning"
+  - title: "Robust LiDAR-based Localization"
     description:
-      - "Developing algorithms for safe and efficient robot navigation in complex environments."
-      - "Focus on multi-robot coordination and collision avoidance."
-    media: "ss.jpg"
-    type: "image"
+      - "Uncertainty-aware localization in 3D point cloud maps"
+      - "Multi-sensor fusion for robust pose estimation"
+      - "Localization failure detection for enhanced reliability"
+      - "Global relocalization for pose recovery and initialization"
 
   - title: "Autonomous Navigation"
     description:

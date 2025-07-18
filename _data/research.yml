@@ -1,8 +1,9 @@
 topics:
-  - title: "Position Estimation"
+  - title: "Safe and Reliable 3D Scene Understanding"
     description:
-      - "Estimating position and orientation of a robot on the map using various sensors such as GPS and LiDARs."
-      - "Fusion of sensor data for improved accuracy in dynamic environments."
+      - "Self-supervised / Risk-aware learning from navigation experiences of mobile robots"
+      - "Traversability estimation of urban outdoor environments"
+      - "Uncertainty-aware 3D Perception in Autonomous Navigation"
     media: "ss.jpg"
     type: "image"
 

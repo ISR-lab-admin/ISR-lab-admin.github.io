@@ -14,6 +14,8 @@ topics:
       - "Multi-sensor fusion for robust pose estimation"
       - "Localization failure detection for enhanced reliability"
       - "Global relocalization for pose recovery and initialization"
+    media: "https://youtu.be/b_vRKONVDPw"
+    type: "youtube"
 
   - title: "Autonomous Navigation"
     description:

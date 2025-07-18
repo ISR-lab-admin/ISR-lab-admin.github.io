@@ -28,7 +28,7 @@ permalink: /research/
         {% if topic.type == "image" %}
         <img src="{{ site.baseurl }}/img/research/{{ topic.media }}" alt="{{ topic.title }}" class="img-responsive research-media">
         {% elsif topic.type == "video" %}
-        <video controls class="img-responsive rounded">
+        <video autoplay muted playsinline controls class="img-responsive rounded">
           <source src="{{ site.baseurl }}/img/research/{{ topic.media }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>

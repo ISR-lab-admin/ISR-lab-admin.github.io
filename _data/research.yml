@@ -46,7 +46,7 @@ achievements:
     type: "youtube"
     
   - title: "COEX Indoor Autonomous Driving"
-    description: "Robot autonomously navigating complex indoor environments at COEX, illustrating real-world."
+    description: "Robot autonomously navigating complex indoor environments at COEX."
     media: "https://www.youtube.com/watch?v=jq7qtLDgc8k"
     type: "youtube"
 

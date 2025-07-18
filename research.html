@@ -34,7 +34,7 @@ permalink: /research/
         </video>
         {% elsif topic.type == "youtube" %}
         <div class="embed-responsive research-media">
-          <iframe src="{{ topic.media | replace: 'watch?v=', 'embed/' | append: '?autoplay=1&mute=1'}}" allowfullscreen></iframe>
+          <iframe src="{{ topic.media | replace: 'watch?v=', 'embed/' | append: '?autoplay=1&mute=1&modestbranding=1&rel=0'}}" allowfullscreen></iframe>
         </div>
         {% endif %}
       </div>

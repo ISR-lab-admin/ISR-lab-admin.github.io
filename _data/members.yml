@@ -38,7 +38,7 @@ alumni:
 
   - name: "김달형"
     photo: "김달형.jpg"
-    workplace: "Professor, Southern Illinois University"
+    workplace: "Associate Professor, Kennesaw State University"
 
   - name: "이국태"
     photo: "이국태.jpg"
@@ -54,15 +54,15 @@ alumni:
 
   - name: "안재완"
     photo: "안재완.jpg"
-    workplace: "HL Mando Corp."
+    workplace: "Hyundai Construction Equipment"
 
   - name: "김호연"
     photo: "김호연.jpg"
-    workplace: "Robotics Engineer, York Exponential"
+    workplace: "Assistant Professor, University of Maryland"
 
   - name: "신유진"
     photo: "신유진.jpg"
-    workplace: "The Washington Post"
+    workplace: "CEO, VisualPlot"
 
   - name: "유광현"
     photo: "유광현.jpg"
@@ -86,7 +86,7 @@ alumni:
 
   - name: "성윤창"
     photo: "성윤창.jpg"
-    workplace: "Postdoctoral Researcher, University of Texas at Austin"
+    workplace: "Assistant Professor, Nanyang Technological University"
 
   - name: "문창배"
     photo: "문창배.jpg"
@@ -138,11 +138,11 @@ alumni:
 
   - name: "박성용"
     photo: "박성용.jpg"
-    workplace: "AVALVE"
+    workplace: "CTO, AVALVE"
 
   - name: "이현석"
     photo: "이현석.jpg"
-    workplace: "Agency for Defense Development (ADD)"
+    workplace: "Korea Railroad Research Institute"
 
   - name: "김기태"
     photo: "김기태.jpg"
@@ -158,11 +158,11 @@ alumni:
 
   - name: "차동근"
     photo: "차동근.jpg"
-    workplace: ""
+    workplace: "CEO, Charobotics"
 
   - name: "이진원"
     photo: "이진원.png"
-    workplace: ""
+    workplace: "Postdoctoral Researcher, Korea University"
 
   - name: "조민우"
     photo: "조민우.png"

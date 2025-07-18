@@ -27,37 +27,37 @@ achievements:
     description: "Developed real-time LiDAR-based human-following technology and demonstrated its effectiveness in a large-scale environment such as Incheon Airport."
     media: "https://www.youtube.com/watch?v=bf7gtgNr_10"
     type: "youtube"
-
-  - title: "COEX Outdoor Autonomous Driving"
-    description: "Demonstrated terrain hazard recognition and autonomous navigation capabilities based on self-supervised learning in the outdoor area of COEX, Gangnam."
-    media: "https://www.youtube.com/watch?v=g32ukOEZQ0E"
-    type: "youtube"
-
-  - title: "Service Robot"
-    description: "Collaborated with Woowa Brothers Corp. (배달의 민족) to develop and showcase an indoor delivery robot for food courts, enabling autonomous food transport in real-world environments."
-    media: "https://www.youtube.com/watch?v=2G5bopKPjC4"
-    type: "youtube"
-
-  - title: "Autonomous delivery robots"
-    description: "Conducted research on autonomous delivery robots capable of outdoor navigation, including robust path planning and obstacle avoidance in dynamic urban settings"
-    media: "https://www.youtube.com/watch?v=WL5S9BhBvFM"
-    type: "youtube"
-    
-  - title: "Greenhouse Harvest Transport Robot"
-    description: "An autonomous robot for transporting harvested crops in greenhouse environments, supporting agricultural automation."
-    media: "https://www.youtube.com/watch?v=mKvnp1x1qe4"
-    type: "youtube"
     
   - title: "Incheon Airport autonomous robot"
     description: "Demonstrated a robot capable of autonomous navigation and real-time avoidance of dynamic obstacles at Incheon International Airport."
     media: "https://www.youtube.com/watch?v=gr8gvcCqwwQ"
     type: "youtube"
     
+  - title: "Greenhouse Harvest Transport Robot"
+    description: "An autonomous robot for transporting harvested crops in greenhouse environments, supporting agricultural automation."
+    media: "https://www.youtube.com/watch?v=mKvnp1x1qe4"
+    type: "youtube"
+
+  - title: "COEX Outdoor Autonomous Driving"
+    description: "Demonstrated terrain hazard recognition and autonomous navigation capabilities based on self-supervised learning in the outdoor area of COEX, Gangnam."
+    media: "https://www.youtube.com/watch?v=g32ukOEZQ0E"
+    type: "youtube"
+    
   - title: "COEX Indoor Autonomous Driving"
     description: "Robot autonomously navigating complex indoor environments at COEX, illustrating real-world."
     media: "https://www.youtube.com/watch?v=jq7qtLDgc8k"
     type: "youtube"
-        
+
+  - title: "Service Robot"
+    description: "Collaborated with Woowa Brothers Corp. (배달의 민족) to develop and showcase an indoor delivery robot for food courts, enabling autonomous food transport in real-world environments."
+    media: "https://www.youtube.com/watch?v=2G5bopKPjC4"
+    type: "youtube"
+    
+  - title: "Autonomous delivery robots"
+    description: "Conducted research on autonomous delivery robots capable of outdoor navigation, including robust path planning and obstacle avoidance in dynamic urban settings"
+    media: "https://www.youtube.com/watch?v=WL5S9BhBvFM"
+    type: "youtube"
+
   - title: "Remote Operation System"
     description: "Developed a remote operation interface based on 3D LiDAR that enables intuitive environmental understanding and real-time robot motion visualization for teleoperators."
     media: "https://www.youtube.com/watch?v=t7CHLlU7WSs"

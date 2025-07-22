@@ -17,12 +17,12 @@ topics:
     media: "https://www.youtube.com/watch?v=b_vRKONVDPw"
     type: "youtube"
 
-  - title: "Autonomous Navigation"
+  - title: "Multi-Robot Path Planning"
     description:
       - "Developing robust autonomous systems for indoor and outdoor environments."
       - "Integration of AI techniques for dynamic decision making."
-    media: "ss.jpg"
-    type: "image"
+    media: "https://www.youtube.com/watch?v=FkzkR-lLxic"
+    type: "youtube"
 
 achievements:
   - title: "Human-Following Mobile Robot"

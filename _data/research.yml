@@ -21,6 +21,7 @@ topics:
     description:
       - "Finding collision-free paths for multiple agents."
       - "MAPF algorithms aim to optimize performance metrics."
+      - "Executing the algorithm in the real world."
     media: "https://www.youtube.com/watch?v=FkzkR-lLxic"
     type: "youtube"
 

@@ -19,8 +19,8 @@ topics:
 
   - title: "Multi-Robot Path Planning"
     description:
-      - "Developing robust autonomous systems for indoor and outdoor environments."
-      - "Integration of AI techniques for dynamic decision making."
+      - "Finding collision-free paths for multiple agents."
+      - "MAPF algorithms aim to optimize performance metrics."
     media: "https://www.youtube.com/watch?v=FkzkR-lLxic"
     type: "youtube"
 

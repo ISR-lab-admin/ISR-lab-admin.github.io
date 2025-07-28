@@ -101,7 +101,8 @@ font header .navbar-default .navbar-nav li a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 0;                /* 내부 여백 제거 */
+  height: 300px;             /* 원하는 높이로 고정 (예: 300px 또는 100vh 등) */
   position: relative;
   transition: background-image 1s ease-in-out;
 }

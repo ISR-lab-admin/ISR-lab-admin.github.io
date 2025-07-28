@@ -5,17 +5,24 @@ permalink: /
 ---
 
 <!-- Slider Start -->
-<section id="slider">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-2">
-        <div class="block">
-          <h1 class="animated fadeInUp"><strong>ISR-LAB <br> Intelligent Systems & Robotics</strong></h1>
-          <p class="animated fadeInUp">We design intelligent robots, autonomous systems, and AI technologies for a smarter future.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="slider" style="position: relative;">
+  <!-- 어두운 반투명 배경 추가 -->
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp">
+            <strong>ISR-LAB <br> Intelligent Systems & Robotics</strong>
+          </h1>
+          <p class="animated fadeInUp">
+            We design intelligent robots, autonomous systems, and AI technologies for a smarter future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Research Achievements -->
@@ -146,4 +153,25 @@ permalink: /
     height: 100%;
     border: 0;
   }
+  #slider {
+  background: url('/img/your-background.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+#slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 */
+  z-index: 1;
+}
+
+#slider .block {
+  position: relative;
+  z-index: 2; /* 텍스트가 오버레이 위로 올라오도록 */
+}
 </style>

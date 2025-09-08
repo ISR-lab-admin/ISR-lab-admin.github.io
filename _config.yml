@@ -1,4 +1,11 @@
-
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-STYK5J60H8"
+    anonymize_ip         : # true, false (default)
+    
 exclude:
   - "/vendor/"
   - "Gemfile"

@@ -32,3 +32,47 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+/* ---------------------------------------------------------------
+   Responsive fixes (small viewport / mobile)
+   --------------------------------------------------------------- */
+
+/* Sub-page header banner: drop the 90px left padding and shrink the
+   heading on small screens (default airspace.css value overflows mobile) */
+@media (max-width: 991px) {
+  #global-header { padding-top: 100px; padding-bottom: 70px; }
+  #global-header .block { padding-left: 0; }
+  #global-header .block h1 { font-size: 32px; letter-spacing: 3px; }
+}
+@media (max-width: 767px) {
+  #global-header { padding-top: 80px; padding-bottom: 50px; background-attachment: scroll; }
+  #global-header .block h1 { font-size: 22px; letter-spacing: 2px; padding-bottom: 8px; }
+  #global-header .block p { font-size: 14px; }
+}
+
+/* The slider hero uses background-attachment: fixed, which is buggy on
+   iOS Safari (background snaps or disappears). Use scroll on mobile. */
+@media (max-width: 767px) {
+  #slider { background-attachment: scroll; }
+}
+
+/* Members / publications / professor section titles wrap better */
+.section-title h2 { word-break: keep-all; }
+
+/* Footer logo: the negative translate looks intentional on desktop but
+   breaks centering on mobile. Reset on small screens. */
+@media (max-width: 767px) {
+  .footer-logo { transform: none; max-width: 180px; margin: 0 auto; }
+  .footer-left { padding-top: 10px; }
+  footer .container { padding-left: 20px; padding-right: 20px; }
+}
+
+/* Prevent any oversized media/iframes from forcing horizontal scroll */
+img, video, iframe { max-width: 100%; }
+
+/* Tame any inline `padding-left:90px` style flowing to mobile */
+@media (max-width: 767px) {
+  [style*="padding-left:90px"], [style*="padding-left: 90px"] {
+    padding-left: 0 !important;
+  }
+}

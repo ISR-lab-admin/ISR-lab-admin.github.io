@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
-              <img src="{{ site.baseurl }}/img/logo.png" alt="Logo" style="height:150px; width: auto;">
+              <img src="{{ site.baseurl }}/img/logo.png" alt="Logo" class="navbar-logo">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,30 +36,50 @@
   </div>
 </header><!-- header close -->
 <style>
-.navbar-header .navbar-brand {
-    display: flex; /* Flexbox 활성화 */
-    align-items: center; /* 수직 가운데 정렬 */
-    padding: 0; /* 기존 패딩 제거 */
+/* Logo (responsive sizes) */
+.navbar-logo {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+    .navbar-logo { height: 90px; }
+}
+@media (max-width: 767px) {
+    .navbar-logo { height: 60px; }
+    header { padding: 10px 0 !important; }
+}
 
-    /* 로고 위치 조정 */
-    transform: translateY(5px) translateX(0px);
-} 
 .navbar-header .navbar-brand {
     display: flex;
     align-items: center;
     padding: 0;
+    height: auto;
 }
 
-.navbar-collapse {
-    display: flex;
-    align-items: center;
+/* Desktop only: align nav items vertically centered with the logo.
+   On mobile (<768px), let Bootstrap's collapse stack items vertically. */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex;
+        align-items: center;
+    }
+    .nav.navbar-nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.nav.navbar-nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* Mobile collapse: tidy the dropdown menu */
+@media (max-width: 767px) {
+    header .navbar-default .navbar-nav { padding-top: 0; }
+    header .navbar-default .navbar-nav li a {
+        padding: 12px 16px;
+        text-align: left;
+    }
+    .navbar-toggle { margin-right: 10px; }
 }
 </style>

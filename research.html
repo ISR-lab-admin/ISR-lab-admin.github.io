@@ -62,14 +62,21 @@ permalink: /research/
 <style>
   .research-block {
     margin-bottom: 60px;
-    display: flex;
-    align-items: center;
   }
-  .research-block.reverse {
-    flex-direction: row-reverse;
+  @media (min-width: 992px) {
+    .research-block {
+      display: flex;
+      align-items: center;
+    }
+    .research-block.reverse {
+      flex-direction: row-reverse;
+    }
   }
-  .research-block img, 
-  .research-block video, 
+  @media (max-width: 991px) {
+    .research-block .col-md-6 + .col-md-6 { margin-top: 20px; }
+  }
+  .research-block img,
+  .research-block video,
   .research-block .embed-responsive {
     border-radius: 8px;
     max-height: 300px;
@@ -81,13 +88,14 @@ permalink: /research/
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
     text-align: center;
-    width: 350px;          /* 고정 가로 */
-    height: 400px;         /* 고정 세로 */
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 내용 세로 정렬 */
+    justify-content: space-between;
   }
   .achievement-card img, 
   .achievement-card video, 

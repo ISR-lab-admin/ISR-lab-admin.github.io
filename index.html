@@ -96,48 +96,61 @@ permalink: /
 <style>
   .research-block {
     margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    border-radius: 12px; /* 모서리 둥글게 */
-    background-color: #ffffff; /* 흰 배경 추가 (없다면) */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* 그림자 효과 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 */
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .research-block:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   }
-  .research-block.reverse {
-    flex-direction: row-reverse;
+  /* Two-column flex layout only on tablet+. On mobile, let Bootstrap's
+     col-md-6 stack to full width by NOT forcing flex on the parent. */
+  @media (min-width: 992px) {
+    .research-block {
+      display: flex;
+      align-items: center;
+    }
+    .research-block.reverse {
+      flex-direction: row-reverse;
+    }
   }
-  .research-block img, 
-  .research-block video, 
+  .research-block img,
+  .research-block video,
   .research-block .embed-responsive {
     border-radius: 8px;
     max-height: 300px;
     object-fit: cover;
     width: 100%;
   }
+  /* On narrow screens, give the text some breathing room above/below media */
+  @media (max-width: 991px) {
+    .research-block { padding: 20px !important; }
+    .research-block .col-md-6 + .col-md-6 { margin-top: 20px; }
+  }
+
   .achievement-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;   /* center when narrower than viewport */
     text-align: center;
-    width: 350px;          /* 고정 가로 */
-    height: 400px;         /* 고정 세로 */
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 내용 세로 정렬 */
+    justify-content: space-between;
   }
-  .achievement-card img, 
-  .achievement-card video, 
+  .achievement-card img,
+  .achievement-card video,
   .achievement-card .embed-responsive {
     border-radius: 8px;
     width: 100%;
-    height: 200px;         /* 이미지/영상 고정 높이 */
-    object-fit: cover;     /* 비율 유지 + 잘라서 채움 */
+    height: 200px;
+    object-fit: cover;
   }
   .achievement-card h4 {
     margin-top: 15px;
@@ -148,10 +161,10 @@ permalink: /
     color: #666;
   }
 
-  /* YouTube iframe 비율 유지 */
+  /* YouTube iframe 16:9 ratio */
   .embed-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 비율 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 8px;
@@ -163,5 +176,36 @@ permalink: /
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  /* Slider hero — tighter type on narrow screens to prevent overflow */
+  #slider .block h1 { word-break: keep-all; }
+
+  /* Mobile/tablet: match the slider's height to the source image aspect
+     (1707x1106 ≈ 1.543:1) so background-size:cover doesn't crop the photo.
+     Also center the focus so subjects stay visible across screen sizes. */
+  @media (max-width: 991px) {
+    #slider {
+      min-height: calc(100vw / 1.543);   /* ≈ 64.8vw */
+      background-position: center center !important;
+      background-attachment: scroll !important;
+      display: flex;
+      align-items: center;
+      padding: 30px 0 !important;
+    }
+    #slider .block h1 { font-size: 32px; line-height: 44px; letter-spacing: 4px; padding-bottom: 25px; }
+    #slider .block p  { font-size: 16px; line-height: 28px; letter-spacing: 1px; }
+  }
+  @media (max-width: 767px) {
+    #slider { padding: 20px 0 !important; }
+    #slider .block h1 { font-size: 22px; line-height: 32px; letter-spacing: 2px; padding-bottom: 15px; }
+    #slider .block p  { font-size: 13px; line-height: 22px; letter-spacing: 0.5px; }
+    /* Override the col-md-offset-2 inset on mobile so text isn't pushed right */
+    #slider .col-md-offset-2 { margin-left: 0; text-align: center; }
+  }
+  /* Very narrow phones (e.g., 360px) — give a little more breathing room
+     so the text never overlaps the bottom edge of the image */
+  @media (max-width: 380px) {
+    #slider .block h1 { font-size: 20px; letter-spacing: 1.5px; padding-bottom: 10px; }
   }
 </style>

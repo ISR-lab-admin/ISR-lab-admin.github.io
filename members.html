@@ -170,5 +170,22 @@ permalink: /members/
     margin-bottom: 60px; /* 카드와 다음 섹션 제목 사이 여유 주기 */
   }
 
+  /* Bootstrap 3 float-grid leaves gaps when cards have uneven heights
+     (next-row cards stick to the tallest card above). Make rows flex so
+     items wrap cleanly and equalize height per row. */
+  #members .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #members .row > [class*="col-"] {
+    display: flex;
+  }
+  #members .member-card,
+  #members .alumni-card {
+    width: 100%;
+    max-width: none;
+    margin: 10px 0;
+  }
+
 </style>
 

@@ -172,19 +172,24 @@ permalink: /members/
 
   /* Bootstrap 3 float-grid leaves gaps when cards have uneven heights
      (next-row cards stick to the tallest card above). Make rows flex so
-     items wrap cleanly and equalize height per row. */
-  #members .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #members .row > [class*="col-"] {
-    display: flex;
-  }
-  #members .member-card,
-  #members .alumni-card {
-    width: 100%;
-    max-width: none;
-    margin: 10px 0;
+     items wrap cleanly and equalize height per row — but only at >=sm,
+     where there are actually multiple cards per row. On phones (one-up)
+     keep the original centered 320px card so it doesn't stretch edge-to-
+     edge with a tiny 150px photo floating in the middle. */
+  @media (min-width: 768px) {
+    #members .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #members .row > [class*="col-"] {
+      display: flex;
+    }
+    #members .member-card,
+    #members .alumni-card {
+      width: 100%;
+      max-width: none;
+      margin: 10px 0;
+    }
   }
 
 </style>

@@ -1,0 +1,78 @@
+---
+layout: page
+title: News
+permalink: /news/
+---
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STYK5J60H8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-STYK5J60H8');
+</script>
+
+<!-- Header -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Lab News</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Items -->
+<section id="news-items" style="padding: 60px 0;">
+  <div class="container">
+
+    {% for item in site.data.news.items %}
+    <div class="row news-block">
+      <div class="{% if item.image %}col-md-6{% else %}col-md-12{% endif %}">
+        {% if item.title %}<h3><strong>{{ item.title }}</strong></h3>{% endif %}
+        {% for line in item.body %}
+        <p>• {{ line }}</p>
+        {% endfor %}
+        {% if item.link %}
+        <p><a href="{{ item.link }}" target="_blank" rel="noopener" class="btn btn-default btn-sm news-link">자세히 보기 &raquo;</a></p>
+        {% endif %}
+      </div>
+      {% if item.image %}
+      <div class="col-md-6">
+        <img src="{{ site.baseurl }}/img/news/{{ item.image }}" alt="{{ item.title | default: item.body[0] | escape }}" class="img-responsive news-media">
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+<style>
+  .news-block {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 992px) {
+    .news-block {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: 991px) {
+    .news-block .col-md-6 + .col-md-6 { margin-top: 20px; }
+  }
+  .news-block img,
+  .news-block .news-media {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;            /* show full image, no cropping */
+  }
+  .news-link {
+    margin-top: 10px;
+  }
+</style>

@@ -32,10 +32,16 @@ permalink: /research/
   <div class="container">
 
     {% for topic in site.data.research.topics %}
-    <div class="row research-block {% if forloop.index0 % 2 == 1 %}reverse{% endif %}">
+    <div class="row research-block">
+      <div class="col-md-6">
+        <h3><strong>{{ topic.title }}</strong></h3>
+        {% for line in topic.description %}
+        <p>• {{ line }}</p>
+        {% endfor %}
+      </div>
       <div class="col-md-6">
         {% if topic.type == "image" %}
-        <img src="{{ site.baseurl }}/img/research/{{ topic.media }}" alt="{{ topic.title }}" class="img-responsive research-media">
+        <img src="{{ site.baseurl }}/img/research/{{ topic.media }}" alt="{{ topic.title | escape }}" class="img-responsive research-media">
         {% elsif topic.type == "video" %}
         <video autoplay muted playsinline controls class="img-responsive rounded">
           <source src="{{ site.baseurl }}/img/research/{{ topic.media }}" type="video/mp4">
@@ -46,12 +52,6 @@ permalink: /research/
           <iframe src="{{ topic.media | replace: 'watch?v=', 'embed/' | append: '?autoplay=1&mute=1'}}" allowfullscreen></iframe>
         </div>
         {% endif %}
-      </div>
-      <div class="col-md-6">
-        <h3><strong>{{ topic.title }}</strong></h3>
-        {% for line in topic.description %}
-        <p>• {{ line }}</p>
-        {% endfor %}
       </div>
     </div>
     {% endfor %}

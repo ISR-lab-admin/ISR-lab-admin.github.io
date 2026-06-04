@@ -20,15 +20,27 @@ phd:
     email: "janismoon@korea.ac.kr"
 
 masters:
-  - name: "김부건"
-    photo: "김부건.jpg"
-    research: "Multi-Robot Path Planning"
-    email: "0721qnrjs@korea.ac.kr"
-
   - name: "박세훈"
     photo: "박세훈.webp"
     research: "Multi-Robot Path Planning"
     email: "yuiyt@korea.ac.kr"
+
+  - name: "권순환"
+    photo: ""
+    research: ""
+    email: "shk01421@korea.ac.kr"
+
+
+intern:
+  - name: "강민준"
+    photo: ""
+    research: ""
+    email: "mamy20@korea.ac.kr"
+
+  - name: "서가현"
+    photo: ""
+    research: ""
+    email: "tomatosoup@korea.ac.kr"
 
 
 alumni:
@@ -174,12 +186,16 @@ alumni:
 
   - name: "황창주"
     photo: "황창주.png"
-    workplace: ""
+    workplace: "Samsung Electronics"
 
   - name: "조수현"
     photo: "조수현.jpg"
-    workplace: ""
+    workplace: "Cha Robotics Inc."
 
   - name: "이진혁"
     photo: "이진혁.jpg"
-    workplace: ""
+    workplace: "Hyundai Motor Group"
+
+  - name: "김부건"
+    photo: "김부건.jpg"
+    workplace: "Korea Aerospace Research Institute"

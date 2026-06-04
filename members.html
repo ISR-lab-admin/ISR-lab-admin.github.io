@@ -59,6 +59,24 @@ permalink: /members/
       </div>
     </div>
 
+    <!-- Interns -->
+    <div class="member-section">
+      <div class="section-title">
+        <h2>Intern</h2>
+      </div>
+      <div class="row">
+        {% for member in site.data.members.intern %}
+        <div class="col-md-4 col-sm-6">
+          <div class="member-card">
+            <img src="{{ site.baseurl }}/img/members/{{ member.photo }}" alt="{{ member.name }}" class="img-responsive">
+            <h4>{{ member.name }}</h4>
+            <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
     <!-- Alumni -->
     <div class="member-section">
       <div class="section-title">

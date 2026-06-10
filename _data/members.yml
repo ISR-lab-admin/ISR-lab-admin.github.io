@@ -26,19 +26,19 @@ masters:
     email: "yuiyt@korea.ac.kr"
 
   - name: "권순환"
-    photo: ""
+    photo: "권순환.jpg"
     research: ""
     email: "shk01421@korea.ac.kr"
 
 
 intern:
   - name: "강민준"
-    photo: ""
+    photo: "강민준.jpg"
     research: ""
     email: "mamy20@korea.ac.kr"
 
   - name: "서가현"
-    photo: ""
+    photo: "서가현.jpg"
     research: ""
     email: "tomatosoup@korea.ac.kr"
 

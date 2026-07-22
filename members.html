@@ -34,6 +34,9 @@ permalink: /members/
             <h4>{{ member.name }}</h4>
             <p><strong>Research Area:</strong> {{ member.research }}</p>
             <p><strong>Email:</strong> <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+            {% if member.homepage %}
+            <p><strong>Homepage:</strong> <a href="{{ member.homepage }}" target="_blank" rel="noopener">{{ member.homepage | remove: "https://" | remove: "http://" }}</a></p>
+            {% endif %}
           </div>
         </div>
         {% endfor %}

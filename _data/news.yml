@@ -1,4 +1,60 @@
 items:
-  - body:
-      - "\"Uncertainty-aware LiDAR-based Localization for Outdoor Mobile Robots\" Selected as a Top 10% Most-Viewed Paper in the Journal of Field Robotics"
+  - title: "Alumni Spotlight | Youjin Shin"
+    image: "shin2.png"
+    image_width: "380px"
+    body:
+      - "Youjin Shin contributed to Lost Games, which received an Honorable Mention in Excellence in Journalistic Innovation at The SOPA 2026 Awards, organized by the Society of Publishers in Asia (SOPA)."
+      - "The SOPA Awards recognize outstanding journalism across the Asia-Pacific region and are widely regarded as one of the region’s most prestigious journalism awards."
+      - "The Excellence in Journalistic Innovation category recognizes work that expands the possibilities of journalism through new formats, technologies, and storytelling approaches."
+    links:
+      - label: "SOPA 2026 Winners"
+        url: "https://sopawards.com/wp-content/uploads/2026/06/SOPA-2026-Awards-Winner-List_Final_12062026.pdf"
+      - label: "The Straits Times"
+        url: "https://www.straitstimes.com/singapore/st-story-on-s-e-asia-amid-us-china-rivalry-bags-asian-publishing-award"
+  - title: "Alumni Spotlight | Youjin Shin"
+    image: "shin.png"
+    image_width: "260px"
+    body:
+      - "Youjin Shin received Gold, Individual: Art Direction Portfolio (Multiplatform) at the 47th Annual Creative Competition organized by the Society for News Design (SND)."
+      - "SND is an international organization representing the fields of news design and visual journalism, recognizing outstanding work in areas such as digital storytelling, graphics, illustration, and social media."
+      - "The Gold Award is granted only by unanimous decision of the jury and is not necessarily awarded in every category each year. This year, Individual Gold was presented to only six recipients across five categories, with Youjin Shin receiving Gold in the Art Direction Portfolio category of the Multiplatform division."
+    links:
+      - label: "Award"
+        url: "https://lnkd.in/gziMaarZ"
+  - title: "Alumni Spotlight | Prof. Kitae Kim"
+    image: "kim.png"
+    image_width: "260px"
+    body:
+      - "Our lab alumnus, Dr. Kitae Kim (M.S. '21), is joining North Carolina State University (NCSU) as a Tenure-Track Assistant Professor in the Department of Biological and Agricultural Engineering in August 2026."
+      - "He received his Ph.D. in Mechanical Engineering from Purdue University in May 2026. During his doctoral studies, he developed autonomy stacks for in-row and under-canopy agricultural mobile robots as part of the U.S. National Science Foundation (NSF) Engineering Research Center IoT4Ag, with a focus on autonomous navigation, localization, mapping, and multi-modal sensor integration."
+      - "At NCSU, he will establish and lead the Field Automation, Robotics, & Machinery Lab (FARM Lab), developing generalizable, collaborative, and scalable robotic autonomy to address challenges in agriculture, including labor shortages, resource constraints, and climate-resilient food production."
+      - "His research will also extend these core robotic technologies to broader field robotics applications, including forestry and livestock automation."
+    links:
+      - label: "IoT4Ag"
+        url: "https://iot4ag.us/"
+      - label: "FARM Lab"
+        url: "https://kimkt0408.github.io/farm-lab/"
+  - title: "Alumni Spotlight | Prof. Kooktae Lee"
+    image: "kook.png"
+    image_width: "260px"
+    body:
+      - "Our lab alumnus, Prof. Kooktae Lee, is currently an Associate Professor in the Department of Mechanical Engineering at Texas Tech University, where he continues to pursue active research in robotics and control."
+      - "His research focuses on multi-agent systems and robotic swarm control based on optimal density and Optimal Transport theory."
+      - "Over the past nine years, he has served as a Project Lead on federally funded research projects totaling more than $1 million, including projects supported by the U.S. National Science Foundation (NSF). He received the NSF CAREER Award in 2022 and has published extensively in leading journals in control and robotics, including IEEE TAC, Automatica, and IEEE TCST."
+      - "In 2024, he conducted research on cooperative multi-robot exploration for lunar missions through a NASA MUREP-funded project. His research also includes applications such as autonomous robotic monitoring in wildlife conservation areas."
+    links:
+      - label: "Website"
+        url: "https://sites.google.com/view/kooktaelee"
+      - label: "NSF CAREER Award"
+        url: "https://www.nmt.edu/news/2022/lee-award.php"
+  - title: "ISR Spotlight"
     image: "certificate.png"
+    body:
+      - "\"Uncertainty-aware LiDAR-based Localization for Outdoor Mobile Robots\" Selected as a Top 10% Most-Viewed Paper in the Journal of Field Robotics"
+      - "The paper, “Uncertainty-aware LiDAR-based localization for outdoor mobile robots,” presents a localization framework designed to improve the reliability of LiDAR-based localization for outdoor mobile robots by explicitly considering uncertainty."
+      - "The work was published with support from the Wiley–KERIS agreement with Korea University."
+    links:
+      - label: "Paper: Uncertainty-aware LiDAR-based localization for outdoor mobile robots"
+        url: "https://doi.org/10.1002/rob.22392"
+      - label: "Journal: Journal of Field Robotics"
+        url: "https://onlinelibrary.wiley.com/journal/15564967"

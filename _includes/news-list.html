@@ -1,0 +1,107 @@
+{% comment %}
+  News 목록 렌더러. 사용법: 페이지 front matter에 news_page: N 지정.
+  per_page 개씩 끊어서 N번째 페이지 항목만 표시하고 하단에 페이지 이동 링크를 붙인다.
+{% endcomment %}
+{% assign per_page = 3 %}
+{% assign current = page.news_page | default: 1 %}
+{% assign total_items = site.data.news.items | size %}
+{% assign total_pages = total_items | plus: per_page | minus: 1 | divided_by: per_page %}
+{% assign skip = current | minus: 1 | times: per_page %}
+{% assign prev_page = current | minus: 1 %}
+{% assign next_page = current | plus: 1 %}
+
+<!-- Header -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Lab News</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Items -->
+<section id="news-items" style="padding: 60px 0;">
+  <div class="container">
+
+    {% for item in site.data.news.items limit: per_page offset: skip %}
+    <div class="row news-block">
+      <div class="{% if item.image %}col-md-6{% else %}col-md-12{% endif %}">
+        {% if item.title %}<h3><strong>{{ item.title }}</strong></h3>{% endif %}
+        {% for line in item.body %}
+        <p>• {{ line }}</p>
+        {% endfor %}
+        {% if item.link %}
+        <p><a href="{{ item.link }}" target="_blank" rel="noopener" class="btn btn-default btn-sm news-link">자세히 보기 &raquo;</a></p>
+        {% endif %}
+        {% if item.links %}
+        <p>
+          {% for l in item.links %}
+          <a href="{{ l.url }}" target="_blank" rel="noopener" class="btn btn-default btn-sm news-link">{{ l.label }} &raquo;</a>
+          {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+      {% if item.image %}
+      <div class="col-md-6">
+        <img src="{{ site.baseurl }}/img/news/{{ item.image }}" alt="{{ item.title | default: item.body[0] | escape }}" class="img-responsive news-media"{% if item.image_width %} style="max-width: {{ item.image_width }}; margin: 0 auto; display: block;"{% endif %}>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    {% if total_pages > 1 %}
+    <div class="row">
+      <div class="col-md-12 news-pager">
+        {% if current > 1 %}
+          {% if prev_page == 1 %}
+          <a href="{{ site.baseurl }}/news/" class="btn btn-default">&laquo; Newer</a>
+          {% else %}
+          <a href="{{ site.baseurl }}/news/page/{{ prev_page }}/" class="btn btn-default">&laquo; Newer</a>
+          {% endif %}
+        {% endif %}
+        <span class="news-pager-info">Page {{ current }} of {{ total_pages }}</span>
+        {% if current < total_pages %}
+        <a href="{{ site.baseurl }}/news/page/{{ next_page }}/" class="btn btn-default">Older &raquo;</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+  .news-block {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 992px) {
+    .news-block {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (max-width: 991px) {
+    .news-block .col-md-6 + .col-md-6 { margin-top: 20px; }
+  }
+  .news-block img,
+  .news-block .news-media {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;            /* show full image, no cropping */
+  }
+  .news-link {
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  .news-pager {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  .news-pager .btn { margin: 0 8px; }
+  .news-pager-info { color: #777; margin: 0 8px; }
+</style>

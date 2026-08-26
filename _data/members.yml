@@ -21,23 +21,18 @@ phd:
     homepage: "https://happpppymoon.github.io"
 
 masters:
-  - name: "박세훈"
-    photo: "박세훈.webp"
-    research: "Multi-Robot Path Planning"
-    email: "yuiyt@korea.ac.kr"
-
   - name: "권순환"
     photo: "권순환.jpg"
     research: ""
     email: "shk01421@korea.ac.kr"
 
-
-intern:
   - name: "강민준"
     photo: "강민준.jpg"
     research: ""
     email: "mamy20@korea.ac.kr"
 
+
+intern:
   - name: "서가현"
     photo: "서가현.jpg"
     research: ""
@@ -55,7 +50,7 @@ alumni:
 
   - name: "이국태"
     photo: "이국태.jpg"
-    workplace: "Assistant Professor, New Mexico Tech"
+    workplace: "Associate Professor, Texas Tech University"
 
   - name: "최민기"
     photo: "최민기.jpg"
@@ -199,4 +194,8 @@ alumni:
 
   - name: "김부건"
     photo: "김부건.jpg"
-    workplace: "Korea Aerospace Research Institute"
+    workplace: "Korea Aerospace Industries"
+
+  - name: "박세훈"
+    photo: "박세훈.webp"
+    workplace: "ROBROS"
